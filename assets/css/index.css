@@ -1,0 +1,10 @@
+.header-wrapper {
+  background-color: #FDF5E5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=index.css.map */
