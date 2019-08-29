@@ -151,4 +151,20 @@ body .wrapper {
   padding-bottom: 30px;
 }
 
+footer {
+  font-family: Helvetica;
+  font-size: 1.2rem;
+  color: #33558B;
+  padding: 20px 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer nav {
+  text-align: center;
+}
+footer nav a {
+  font-weight: bold;
+}
+
 /*# sourceMappingURL=index.css.map */
