@@ -7,17 +7,18 @@ body .wrapper {
 }
 
 .banner {
-  background-image: url("/../assets/img/home-banner.jpg");
+  background: linear-gradient(rgba(250, 233, 198, 0.2) 0%, rgba(250, 233, 198, 0.2) 100%), url("/../assets/img/home-banner.jpg") no-repeat center;
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 800px;
   position: relative;
+}
+.banner button:hover {
+  cursor: pointer;
 }
 .banner .banner-content {
   position: absolute;
   right: 5%;
-  width: 60%;
+  width: 65%;
   text-align: center;
   padding: 5% 0;
 }
@@ -26,11 +27,8 @@ body .wrapper {
   font-size: 3rem;
   color: #33558B;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica;
   padding-top: 40px;
-}
-.banner .banner-content .sign-container p {
-  font-weight: normal;
 }
 .banner .banner-content .sign-container button {
   margin: 40px 0;
@@ -54,6 +52,34 @@ body .wrapper {
   width: 45%;
   padding: 20px 5%;
   border-radius: 30px;
+}
+
+.features {
+  padding: 80px 4%;
+  background-color: #FDF5E5;
+  color: #33558B;
+  font-family: Helvetica;
+}
+.features h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  padding-bottom: 80px;
+}
+.features .feature-card {
+  display: flex;
+  justify-content: space-around;
+}
+.features .feature-card .card {
+  text-align: center;
+  width: 25%;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.features .feature-card .card h3 {
+  font-weight: bold;
+}
+.features .feature-card .card:first-child img {
+  padding-bottom: 30px;
 }
 
 /*# sourceMappingURL=home.css.map */

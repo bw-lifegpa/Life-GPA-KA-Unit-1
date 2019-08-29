@@ -7,16 +7,16 @@ body
     margin: 0 auto
 
 .banner
-  background-image: url("/../assets/img/home-banner.jpg")
+  background: linear-gradient(rgba(250, 233, 198, .2) 0%, rgba(250, 233, 198, .2) 100%), url("/../assets/img/home-banner.jpg") no-repeat center
   background-size: cover
-  background-position: center
-  background-repeat: no-repeat
   height: 800px
   position: relative
+  button:hover
+    cursor: pointer
   .banner-content
     position: absolute
     right: 5%
-    width: 60%
+    width: 65%
     text-align: center
     padding: 5% 0
     p
@@ -24,11 +24,9 @@ body
       font-size: 3rem
       color: $text
       font-weight: bold
-      font-family: Arial, Helvetica, sans-serif
+      font-family: Helvetica
       padding-top: 40px
     .sign-container 
-      p
-        font-weight: normal
       button
         margin: 40px 0
         background-color: $button-background
@@ -50,5 +48,28 @@ body
         padding: 20px 5%
         border-radius: 30px
 
+.features
+  padding: 80px 4%
+  background-color: $article-framing
+  color: $text
+  font-family: Helvetica
+  h2
+    font-size: 3rem
+    font-weight: bold
+    padding-bottom: 80px
+  .feature-card
+    display: flex
+    justify-content: space-around
+    .card
+      text-align: center
+      width: 25%
+      font-size: 2rem
+      line-height: 2.5rem
+      h3
+        font-weight: bold
+      p
+    .card:first-child
+      img
+        padding-bottom: 30px
 
 
