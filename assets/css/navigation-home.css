@@ -6,7 +6,7 @@ header {
 }
 header .header-logo {
   border-radius: 20px;
-  box-shadow: 0px 5px 10px;
+  box-shadow: 0px 5px 10px black;
 }
 header .navcontainer {
   display: flex;
