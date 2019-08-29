@@ -1,0 +1,45 @@
+@import reset
+@import variables
+@import navigation-home
+
+html
+  font-size: 100%
+
+body
+  background-color: $home-background
+  color: $text
+  font-family: Helvetica
+
+.wrapper
+  max-width: 1800px
+  margin: 0 auto
+  
+.main-content
+  h1
+    font-weight: bold
+    font-size: 4rem
+    text-align: center
+    padding-bottom: 40px
+  .gallery
+    display: flex
+    flex-flow: wrap
+    justify-content: space-evenly
+    margin: 0 15%
+    .card 
+      width: 25%
+      display: flex
+      flex-flow: column
+      align-items: center
+      padding: 20px 0
+      margin: 20px 40px 20px 40px
+      background-color: $article-framing
+      border-radius: 40px
+      .card-text
+        padding: 40px
+        text-align: center
+      h2
+        font-size: 2rem
+        padding-bottom: 40px
+      img
+        width: 60%
+        border-radius: 50%
