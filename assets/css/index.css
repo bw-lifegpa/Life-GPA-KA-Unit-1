@@ -54,15 +54,17 @@ table {
 header {
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  padding: 10px;
+  align-content: flex-end;
+  padding: 20px 2%;
 }
-header .navcontainer {
-  height: fit-content;
+header .header-logo {
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px;
 }
 header .navcontainer i {
-  color: #234059;
-  font-size: 4rem;
+  vertical-align: middle;
+  color: #33558B;
+  font-size: 6rem;
 }
 
 body {
@@ -78,19 +80,49 @@ body .wrapper {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 800px;
+  position: relative;
 }
 .banner .banner-content {
-  position: relative;
-  right: -30%;
+  position: absolute;
+  right: 5%;
   width: 60%;
   text-align: center;
-  padding: 20px 0 20px;
+  padding: 5% 0;
 }
 .banner .banner-content p {
-  font-size: 2.5rem;
+  line-height: 4rem;
+  font-size: 3rem;
   color: #33558B;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  padding-top: 40px;
+}
+.banner .banner-content .sign-container p {
+  font-weight: normal;
+}
+.banner .banner-content .sign-container button {
+  margin: 40px 0;
+  background-color: #234059;
+  border: none;
+  border-radius: 30px;
+  font-size: 2.5rem;
+  color: #FFE785;
+  padding: 20px 5%;
+}
+.banner .banner-content .mobile-button-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20%;
+}
+.banner .banner-content .mobile-button-container button {
+  background: #000000;
+  color: #fff;
+  border: none;
+  font-size: 2.5rem;
+  width: 45%;
+  padding: 20px 5%;
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */
