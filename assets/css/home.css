@@ -2,6 +2,7 @@ body {
   background-color: #FAE9C6;
 }
 body .wrapper {
+  width: 100%;
   max-width: 1800px;
   margin: 0 auto;
 }
@@ -30,6 +31,9 @@ body .wrapper {
   font-family: Helvetica;
   padding-top: 40px;
 }
+.banner .banner-content .mobile-text {
+  display: none;
+}
 .banner .banner-content .sign-container button {
   margin: 40px 0;
   background-color: #234059;
@@ -53,6 +57,26 @@ body .wrapper {
   padding: 20px 5%;
   border-radius: 30px;
 }
+@media (max-width: 1000px) {
+  .banner {
+    background-size: cover;
+  }
+  .banner .banner-content {
+    position: static;
+    width: 100%;
+  }
+  .banner .banner-content .desktop-text {
+    display: none;
+  }
+  .banner .banner-content .mobile-text {
+    margin: 0 auto;
+    display: block;
+  }
+  .banner .banner-content .sign-container {
+    position: relative;
+    left: 5%;
+  }
+}
 
 .features {
   padding: 80px 4%;
@@ -75,11 +99,31 @@ body .wrapper {
   font-size: 2rem;
   line-height: 2.5rem;
 }
-.features .feature-card .card h3 {
+.features .feature-card .card span {
   font-weight: bold;
 }
 .features .feature-card .card:first-child img {
   padding-bottom: 30px;
+}
+@media (max-width: 1000px) {
+  .features .feature-card {
+    flex-flow: column;
+  }
+  .features .feature-card .card {
+    display: flex;
+    width: 100%;
+    text-align: left;
+  }
+  .features .feature-card .card h3 {
+    display: inline;
+  }
+  .features .feature-card .card .card-text {
+    display: flex;
+    align-items: center;
+  }
+  .features .feature-card .card:nth-child(2) {
+    flex-direction: row-reverse;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

@@ -3,6 +3,7 @@
 body
   background-color: $home-background
   .wrapper
+    width: 100%
     max-width: 1800px
     margin: 0 auto
 
@@ -26,6 +27,8 @@ body
       font-weight: bold
       font-family: Helvetica
       padding-top: 40px
+    .mobile-text
+      display: none
     .sign-container 
       button
         margin: 40px 0
@@ -47,6 +50,19 @@ body
         width: 45%
         padding: 20px 5%
         border-radius: 30px
+  @media #{$mobile}
+    background-size: cover
+    .banner-content
+      position: static
+      width: 100%
+      .desktop-text
+        display: none
+      .mobile-text
+        margin: 0 auto
+        display: block
+      .sign-container
+        position: relative
+        left: 5%
 
 .features
   padding: 80px 4%
@@ -65,11 +81,23 @@ body
       width: 25%
       font-size: 2rem
       line-height: 2.5rem
-      h3
+      span
         font-weight: bold
-      p
     .card:first-child
       img
         padding-bottom: 30px
-
-
+  @media #{$mobile}
+    .feature-card
+      flex-flow: column
+      .card
+        display: flex
+        width: 100%
+        text-align: left
+        h3
+          display: inline
+        .card-text
+          display: flex
+          align-items: center
+      .card:nth-child(2)
+        flex-direction: row-reverse
+        
