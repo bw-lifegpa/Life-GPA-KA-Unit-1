@@ -12,8 +12,6 @@ body
   background-size: cover
   height: 800px
   position: relative
-  button:hover
-    cursor: pointer
   .banner-content
     position: absolute
     right: 5%
@@ -38,6 +36,9 @@ body
         font-size: 2.5rem
         color: $logo-background
         padding: 20px 5%
+      button:hover
+        cursor: pointer
+        background-color: $button-hover
     .mobile-button-container
       display: flex
       justify-content: space-between
@@ -50,6 +51,9 @@ body
         width: 45%
         padding: 20px 5%
         border-radius: 30px
+      button:hover
+        cursor: pointer
+        background-color: $button-hover
   @media #{$mobile}
     background-size: cover
     .banner-content

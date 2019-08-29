@@ -13,9 +13,6 @@ body .wrapper {
   height: 800px;
   position: relative;
 }
-.banner button:hover {
-  cursor: pointer;
-}
 .banner .banner-content {
   position: absolute;
   right: 5%;
@@ -43,6 +40,10 @@ body .wrapper {
   color: #FFE785;
   padding: 20px 5%;
 }
+.banner .banner-content .sign-container button:hover {
+  cursor: pointer;
+  background-color: #989898;
+}
 .banner .banner-content .mobile-button-container {
   display: flex;
   justify-content: space-between;
@@ -56,6 +57,10 @@ body .wrapper {
   width: 45%;
   padding: 20px 5%;
   border-radius: 30px;
+}
+.banner .banner-content .mobile-button-container button:hover {
+  cursor: pointer;
+  background-color: #989898;
 }
 @media (max-width: 1000px) {
   .banner {
