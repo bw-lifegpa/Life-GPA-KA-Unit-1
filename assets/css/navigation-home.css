@@ -11,12 +11,16 @@ header .header-logo {
 header .navcontainer {
   display: flex;
   width: 20%;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 header .navcontainer i {
-  margin-right: 40px;
   color: #33558B;
   font-size: 6rem;
+}
+@media (max-width: 1000px) {
+  header .navcontainer {
+    width: 40%;
+  }
 }
 
 /*# sourceMappingURL=navigation-home.css.map */
